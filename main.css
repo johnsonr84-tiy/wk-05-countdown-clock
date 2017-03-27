@@ -1,3 +1,23 @@
 body {
-  
+  background-color: lightgrey;
+  font-family: arial;
+}
+
+h1 {
+  color: darkblue;
+  text-align: center;
+  font-size: 50px;
+}
+
+#countdown {
+  width: 600px;
+  margin: 10%;
+}
+
+#units {
+  float: center;
+  text-align: center;
+  font-size: 30px;
+  color: red;
+  box-sizing: border-box;
 }
