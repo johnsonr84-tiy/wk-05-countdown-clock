@@ -3,28 +3,31 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="input.css">
 
     <link href="http://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=DigitalBulletin">
 
     <title>Countdown Clock</title>
-    <link rel="stylesheet" href="datepicker.css">
+
   </head>
   <body>
-
+  <div id="container"
+    <div id="freezeLayer" class="freeze-layer" style="display: none"></div>
     <button onclick="validatenumber(prompt'Enter any number'));">Default Prompt</button>
     <button onlclick="">Custom Prompt</button>
     <div id="dialogCont" class="dialog">
       <div class="dlg-header">
-        <span id="dlg-header">Custom Prompt</span>
+        <span id="dlg-header">Date Selector</span>
       </div>
-      <div class"dlg-body">
-        <div id"dlgMessage"></div>
-        <input id="dialogInputEl" type="text" class="dlg-input-el" />
-      </div>
+      <div class="dlg-body"</div>
+        <div id="dlgMessage">Enter Your Event Date<input id="dialogInputEl" type="text" class="dlg-input-el"</div>
       <div class="dlg-footer">
-        <a onclick="">Okay</a>
-        <a onclick="">Cancel</a>
+        <a onclick="">Start</a>
+        <a onclick="">Stop</a>
       </div>
+    </div>
 
 
     <div id="countdown">
@@ -39,6 +42,5 @@
     </div>
 
     <script src="./main.js"></script>
-    <script src="datepicker.js"></script>
   </body>
 </html>
