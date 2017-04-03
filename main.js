@@ -43,23 +43,6 @@ function startTimer(id, deadline){
   }, 1000);
 }
 
-function validateNumbumer (number) {
-  var msg = '';
-  if (number != null) {
-
-  } else {
-    msg = 'you cancelled the action.';
-    if (isNan(number)) {
-      msg = 'The input is not a valid number';
-    } else {
-      msg = (number %2 == 0) ? 'Even Number' : 'Odd Number'
-    }
-  } else {
-    msg = 'Wou cancelled the action'
-  }
-  document.getElementById('result').text
-}
-
 window.onload = function(){
   var deadline = new Date("May 22, 2017 17:00:00");
   startTimer("clock", deadline);
