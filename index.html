@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-
-
-    <link href="http://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css"/>
-
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
     <title>Countdown Clock</title>
-
   </head>
 
   <body>
-    <div id="flex-container">
-      <div id="flex-item-1">
-        <p>Prompt</p>
-      </div>
-      <div id="flex-item-2">
-        <p>Set Your Date countdown</p>
-      </div>
-      <div id="flex-item-3"
-        <div id="countdown">
-          <h1>Event Countdown</h1>
-          <div id="clock"></div>
-          <div id="flex-item-4">
-              <span>Days</span>
-              <span>Hours</span>
-              <span>Minutes</span>
-              <span>Seconds</span>
+    <div class="dropdown">
+          <div onclick="myFunction()" class="menu-box">
+            <div class="menu bar-one"></div>
+            <div class="menu bar-two"></div>
+            <div class="menu bar-three"></div>
+          </div>
+          <div id="myDropdown">
+            <button href="#custom-title" onclick="popupTitle()">Event Title</button>
+          </div>
+        <div class="dialog-container">
+          <div id="dialog-counter">
+              <div class="dialog-header">
+                <span id="dlgHeader">Enter Event Date</span>
+              </div>
+              <div class="dialog-body">
+                <input id="dialogInputElDay" type="text" class="dialog-input-element" placeholder="dd">
+                <input id="dialogInputElMonth" type="text" class="dialog-input-element" placeholder="mm">
+                <input id="dialogInputElYear" type="text" class="dialog-input-element" placeholder="yyyy">
+              </div>
+              <div class="dialog-footer">
+                <input class="dialog-button" id="okay-button" name="okay" type="submit" value="Okay">
+                <input class="dialog-button" value="Cancel" type="button" onclick="alert('You clicked the 'Cancel' button');">
+              </div>
           </div>
         </div>
+        <table class="countdown">
+          <tbody>
+            <tr class="info">
+              <td id="clockTitle" colspan="4"> Countdown Clock</td>
+            </tr>
+            <tr class="info">
+              <td id="days">0</td>
+              <td id="hours">0</td>
+              <td id="minutes">0</td>
+              <td id="seconds">0</td>
+            </tr>
+            <tr class="increments">
+              <td>Days</td>
+              <td>Hours</td>
+              <td>Minutes</td>
+              <td>Seconds</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-
-    <script src="./main.js"></script>
-  </body>
+      <script type="text/javascript" src="./main.js"></script>
+    </body>
 </html>
