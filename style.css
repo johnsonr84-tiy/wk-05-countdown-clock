@@ -80,3 +80,15 @@ body {
 #clockTitle {
   padding: 1rem;
 }
+
+.dialog-input-element {
+  width: 4rem;
+  font-size: 0.5em;
+  background-color: lightgrey;
+  color: purple;
+  font-family: 'Fredericka the Great', arial;
+}
+
+.info {
+  color: purple;
+}
